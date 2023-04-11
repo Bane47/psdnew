@@ -1,9 +1,22 @@
 @font-face {
     font-family: Srikanth;
-    src: url(/assets/fonts/00819\ Regular.ttf);
+    src: url('../fonts/00819\ Regular.ttf');
 }
+
+/* Text color for validation */
+form .error{
+
+    
+    color: red;
+    font-size: xx-small;
+
+}
+
+
+
+/* layer 1 banner */
 .banner{
-    background-image: url(/assets/images/banner.png);
+    background-image: url('../images/banner.png');
     background-size: cover;
     background-position: center;
 }
@@ -78,6 +91,9 @@ span{
 
 }
 
+
+/* Table css */
+
 #tablehead {
     background-color: #aab33c;
     color: #ffffff;
@@ -104,6 +120,9 @@ th {
     border-radius: 5px;
     overflow: hidden;
 }
+.tblecntnt{
+    font-size: xx-small;
+}
 
 #price {
     font-size: 16px;
@@ -124,7 +143,7 @@ th {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 .table-striped tbody td:nth-of-type(odd) {
     box-shadow: -5px 0 5px -5px #333, 7px 0 7px -7px #313030;
@@ -151,7 +170,7 @@ th {
 
 
 .ss{
-    background-image: url("/assets/images/sect5.png");
+    background-image: url("../images/sect5.png");
 }
 
 /* z-index */
@@ -172,6 +191,8 @@ th {
     order: 2;
   }
 
+
+  /* layer 4th 15 years  */
 #rectanglebox {
     position: absolute;
     margin-left: -70px;
@@ -197,6 +218,8 @@ th {
     font-weight: 600;
     font-family: 'Quicksand', sans-serif;
 }
+
+/* layer 7 styling  */
 
 #layer7 {
     height: 272px;
@@ -256,7 +279,7 @@ th {
 
 }
 
-
+/* layer 8 styling  */
 
 #layer8 {
     height: 170px;
@@ -283,16 +306,18 @@ th {
    
  
 }
+
+
+/* footer styling  */
 .ftfs{
     color: #aab33c;
 }
 
-
-
-#footer {
-    background-image: url('/assets/images/footerbg.png');
-
+#sectionfooter{
+    background-image: url('../images/footerbg.png');
 }
+
+
 .ftfa{
     background-color: #aab33c;
     color: beige;
@@ -322,12 +347,20 @@ input{
     font-family: 'Quicksand', sans-serif;
 
 }
+#ftbtn{
+    margin-left: 135px;
+}
+
+
+
+
+/* the media queries goes here  */
 @media screen and (min-width:1024px) {
     #layer7 .card {
         width: 240px;
         height: 50px;
         flex-direction: row;
-        margin-left: 60px;
+        margin-left: 30px;
         margin-top: -30px;
     
     }
@@ -382,31 +415,43 @@ input{
     }
  
 }
-@media screen and (min-width:320px) and (max-width:767px) {
-   #logo{
-    height: 30px;
-    width: 70px;
-   }
-    .navbar-collapse{
-        position: absolute;
-        z-index: 1;
-        margin-top: 380px;
-        margin-left: 290px;
+@media screen and (min-width:320px) and (max-width:424px){
+    #layer7 {
+        height: 550px;
+        margin-top: 30px;
+        position: relative;
+       
+        
     }
     
-    #pp,#fifteen,#years,#rectanglebox,#design,#computer,#phone{
-        display: none;
-    }
-    .navbar-collapse{
-        margin-left: 0px;
-    }
 
-    .nav-link{
-    font-size: xx-small;
+    .l7img{
+        margin-left: 40px;
+        height: 150px;
+        width: 205px;
     }
 
-    
+    #layer7 .card {
+        width: 180px;
+        height: 40px;
+        flex-direction: row;
+        margin-left: 53px;
+        margin-top: -20px;
+    }
 
+    #layer7 .card-text {
+        padding-top: 2px;
+        font-size: 7px;
+        line-height: 10px;
+     
+    }
+    #layer7 .card img {
+        width: 30px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
     #layer7 {
         height: 550px;
         margin-top: 30px;
@@ -442,6 +487,54 @@ input{
         width: 30px;
         height: 40px;
     }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+   #logo{
+    height: 30px;
+    width: 70px;
+   }
+
+   .navs ul button{
+
+    width: 80px;
+    height: 20px;
+    font-size: xx-small;
+   }
+    .navbar-collapse{
+        position: absolute;
+        z-index: 1;
+        margin-top: 250px;
+        margin-left: 290px;
+       
+    }
+    
+  
+    .headerlabels{
+        margin-left: -50px;
+    }
+    #thebest{
+        font-size: x-large;
+    }
+    .mnlbl{
+        font-size: smaller;
+        width: 150px;
+    }
+    #pp,#fifteen,#years,#rectanglebox,#design,#computer,#phone{
+        display: none;
+    }
+    .navbar-collapse{
+        margin-left: 200px;
+    }
+
+    .nav-link{
+    font-size: xx-small;
+    line-height: 0.5;
+    }
+
+
+
+   
     .links{
         font-size: xx-small;
     }
@@ -452,6 +545,23 @@ input{
         white-space: pre-line;
     }
 }
+@media screen and (min-width:321px) and (max-width:375px)  {
+    .navbar-collapse{
+        position: absolute;
+        z-index: 1;
+        margin-top: 250px;
+        margin-left: 250px;
+    }
+}
+@media screen and (min-width:376px) and (max-width:425px)  {
+    .navbar-collapse{
+        position: absolute;
+        z-index: 1;
+        margin-top: 250px;
+        margin-left: 250px;
+    }
+}
+
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     #computer,#phone{
@@ -494,6 +604,34 @@ input{
 
     .form{
         white-space: pre-line;
+    }
+    .navbar-collapse{
+        position: absolute;
+        z-index: 1;
+        margin-top: 270px;
+        margin-left: 0px;
+        line-height: 0.6;
+    }
+    .navs ul button{
+
+        width: 80px;
+        height: 20px;
+        font-size: xx-small;
+       }
+    .headerlabels{
+        margin-left: 100px;
+    }
+    #thebest{
+        font-size: 35px;
+    }
+    .mnlbl{
+        font-size: 11px;
+        width: 150px;
+    }
+    .mnbtn{
+        height: 20px;
+        width: 60px;
+        font-size: 6px;
     }
 }
 

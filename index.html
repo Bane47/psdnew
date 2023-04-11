@@ -6,21 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-  <script src="/assets/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/assets/css/styling.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styling.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4f6b630aab.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+<script src="assets/js/jquery.js" type="text/javascript"></script>
 </head>
 
 <body>
+
+  <!-- layer 1 banner  -->
   <div class="container-fluid banner">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent navs">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="col-sm-6" id="logo" src="/assets/images/Logo.png" alt="logo"></a>
+        <a class="navbar-brand" href="#"><img class="col-sm-6" id="logo" src="assets/images/Logo.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,8 +54,8 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="#sectionfooter">LOG IN</a>
             </li>
-            <li>
-              <button type="button" class="navbtn mt-1 fw-bold p-1 small">GET THE DEAL</button>
+            <li >
+              <button type="button" id="navbutton" class="navbtn mt-1 fw-bold p-1 small">GET THE DEAL</button>
 
 
             </li>
@@ -73,12 +79,14 @@
 
       </div>
       <div class="col-sm-6" id="design">
-        <img class="col-sm-12 mt-4 pt-5" src="assets/images/DESIGN.png" alt="">
+        <img class="col-sm-12 mt-4 pt-5" src="assets/images/DESIGN.png" alt="Computer">
       </div>
     </div>
   </div>
 
 
+
+<!-- layer 2 cards  -->
 
 
   <div id="section2" class="container p-5">
@@ -87,7 +95,7 @@
         <div class="card col-md-12 h-100">
           <div class="text-center">
             <div class="mx-auto">
-          <img class="col-sm-6 mt-4 img-fluid " src="assets/images/cardimg1.png" alt="">
+          <img class="col-sm-6 mt-5 img-fluid " src="assets/images/cardimg1.png" alt="Card1">
         </div>
         </div>
         <div class="card-body">
@@ -99,7 +107,7 @@
         <div class="card col-md-12 h-100">
           <div class="text-center">
             <div class="mx-auto">
-              <img class="col-sm-6 mt-4 img-fluid " src="assets/images/cardimg2.png" alt="">
+              <img class="col-sm-6 mt-4 img-fluid " src="assets/images/cardimg2.png" alt="Card2">
             </div>
           </div>
           <div class="card-body">
@@ -111,7 +119,7 @@
         <div class="card col-md-12 h-100">
           <div class="text-center">
             <div class="mx-auto">
-              <img class="col-sm-6 mt-4 img-fluid " src="assets/images/cardimg3.png" alt="">
+              <img class="col-sm-6 mt-4 img-fluid " src="assets/images/cardimg3.png" alt="Card3">
             </div>
         </div>
           <div class="card-body">
@@ -123,7 +131,7 @@
         <div class="card col-md-12 h-100">
           <div class="text-center">
             <div class="mx-auto">
-              <img class="col-sm-6 mt-4 img-fluid " src="assets/images/cardimg4.png" alt="">
+              <img class="col-sm-6 mt-4 img-fluid " src="assets/images/cardimg4.png" alt="Card4">
             </div>
     </div>
           <div class="card-body">
@@ -134,8 +142,9 @@
     </div>
   </div>
 
+<!-- layer 3  -->
 
-  <div id="section3" class="container pt-5">
+  <div id="section3" class="container ms-lg-5 pt-5">
     <div class="row">
       <div class="col-sm-12 col-lg-6">
         <label class="h3">Analyze any kind of Real Estate investment</label>
@@ -174,7 +183,7 @@
     <div class="row ms-5 ">
       <div class="col-sm-6">
         <img class="col-sm-8" id="computer" src="assets/images/computer.png" alt="Computer">
-        <image src="/assets/images/Rectangle 34 (1).png   " id="rectanglebox"></image>
+        <image src="assets/images/Rectangle 34 (1).png   " alt="rectangle" id="rectanglebox"></image>
         <label id="fifteen">15</label>
         <label id="years">Years Experience</label>
       </div>
@@ -207,17 +216,20 @@
     </div>
 
   </div>
+
+
+  <!-- layer 4 table -->
   <div id="section5" class="container pt-5">
     <table class="table table-striped rounded-top  table-hover ">
       <thead class="thead-dark">
         <tr id="tablehead">
 
           <th scope="col" class="h1 fw-bold">Plans</th>
-          <th scope="col">
+          <th class="col-2" scope="col">
             <div class="h4 fw-bold">FULL</div>
             <p>Have complete control over all the analysis parameters.</p>
           </th>
-          <th scope="col">
+          <th class="col-2" scope="col">
             <div class="h4 fw-bold">LIGHT</div>
             <p>The best way to analyze properties & print pro reports.</p>
           </th>
@@ -226,7 +238,7 @@
       <tbody>
         <tr>
           <th class="tblep border-end" scope="row">
-            <p>
+            <p class="tblecntnt">
               Général
               Market your properties on the web !
               Your properties will be accessible from anywhere to anyone! Add links to your website, newsletter,
@@ -235,65 +247,65 @@
               Click here to view a sample
             </p>
           </th>
-          <td class="border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
-          <td class="border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
 
         </tr>
         <tr>
           <th class="tblep border-end" scope="row">
-            <p>Data
+            <p class="tblecntnt">Data
               Flexible mortgage (frequency, amortization, interest rate)</p>
           </th>
-          <td class="border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
-          <td class="border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
         </tr>
         <tr>
           <th class="tblep border-end" scope="row">
-            <p>Unlimited number of mortgages to finance a property (balance of sale, 2nd
+            <p class="tblecntnt">Unlimited number of mortgages to finance a property (balance of sale, 2nd
               mortgage, collateral)
               all this, under different conditions (interest rate, payment frequency, etc.)</p>
           </th>
-          <td class="border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
           <td class="border-end"></td>
         </tr>
         <tr>
           <th class="tblep border-end" scope="row">
-            <p>Unlimited number of income sources </p>
+            <p class="tblecntnt">Unlimited number of income sources </p>
             </td>
-          <td class="border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
           <td class="border-end"></td>
         </tr>
         <tr>
           <th class="tblep border-end" scope="row">
-            <p>Modify the inflation of income and expenses independently for each year in the
+            <p class="tblecntnt">Modify the inflation of income and expenses independently for each year in the
               financial forecast.
               Detailed leases (multifamily and commercial). Unlimited number of leases. (Start date, length, tenants,
               included services, etc.)
               Possibility to increase the rent for every lease.</p>
 
           </th>
-          <td class="tblep border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="tblep border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
-          <td class="tblep border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="tblep border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
         </tr>
         <tr>
           <th class="tblep border-end" scope="row">
-            <p>
+            <p class="tblecntnt">
               Support and subscription
               FREE technical support by E-mail and toll-free number.
               No contract! No activation fees! No penalties! You can stop using iAnalyzeREI whenever you decide
             </p>
             </td>
-          <td class="tblep border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="tblep border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
-          <td class="tblep border-end"><img class="col-sm-2 ms-5" src="/assets/images/Vector Smart Object copy.png"
+          <td class="tblep border-end"><img class="col-sm-2 ms-5" src="assets/images/Vector Smart Object copy.png"
               alt="Tick"></td>
         </tr>
 
@@ -326,9 +338,9 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-4 layer7">
-          <img src="/assets/images/layer7cardimg1.png" class="img-fluid l7img">
+          <img src="assets/images/layer7cardimg1.png" alt="Img1" class="img-fluid l7img">
           <div class="card " id="layer7">
-            <img src="/assets/images/s7img1.png" class="card-img-top img-fluid" alt="...">
+            <img src="assets/images/s7img1.png" class="card-img-top img-fluid" alt="img2">
             <div class="card-body  p-1">
               <p class="card-text">To make an informed decision when buying or purchasing an income property !
               </p>
@@ -338,9 +350,9 @@
 
 
         <div class="col-lg-4 col-md-4 layer7">
-          <img src="/assets/images/layer7cardimg2.png" class="img-fluid l7img">
+          <img src="assets/images/layer7cardimg2.png"  alt="img3" class="img-fluid l7img">
           <div class="card" id="layer7m" >
-            <img src="/assets/images/s7img2.png" class="card-img-top img-fluid" alt="...">
+            <img src="assets/images/s7img2.png" class="card-img-top img-fluid" alt="img4">
             <div class="card-body p-1">
               <p class="card-text">FREE, fast and courteous
                 customer support !
@@ -350,9 +362,9 @@
 
 
         <div class="col-lg-4 col-md-4 layer7">
-          <img src="/assets/images/layer7cardimg3.png" class="img-fluid l7img">
+          <img src="assets/images/layer7cardimg3.png" alt="img5" class="img-fluid l7img">
           <div class="card t" id="layer7">
-            <img src="/assets/images/s7img3.png" class="card-img-top img-fluid" alt="...">
+            <img src="assets/images/s7img3.png" class="card-img-top img-fluid" alt="img6">
             <div class="card-body p-1">
               <p class="card-text">Zoom-imm is easy to use and produces professional reports</p>
             </div>
@@ -376,7 +388,7 @@
   </div>
 
 
- 
+ <!-- footer  -->
 
   <div id="sectionfooter" class="container-fluid py-5" >
     <div class="row pt-lg-3  ms-lg-5 ps-lg-5">
@@ -417,16 +429,17 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3 form" >
-        <form action="" method="get">
-          <i class="fa-solid fa-user ftfa p-2 p-md-2" ></i><input class="w-75 p-1"
-            type="text" name="uname" placeholder="Name" required>
-          <i class="fa-thin fa-envelope fas ftfa p-2" ></i><input
-            class="w-75 mt-2 p-1" type="text" name="email" placeholder="Email" required>
-          <i class="fa-light fa-phone fas ftfa p-2" ></i><input
-            class="w-75 mt-2 p-1" type="text" name="phone" placeholder="Phone" required>
-          <i class="fa-light fa-comment fas ftfa p-2" ></i><input
-            class="w-75 mt-2 p-1" type="text" name="comments" placeholder="Comments" required>
-          <button type="button" class="me-5 mt-1 submit fw-bold" >SUBMIT</button>
+        <!-- forms -->
+        <form  action="" id="form0" method="get">
+         <div> <i class="fa-solid fa-user ftfa p-2 p-md-2" ></i><input class="w-75 p-1"
+            type="text" name="uname" placeholder="Name" required></div>
+            <div class="mt-1"> <i class="fa-thin fa-envelope fas ftfa p-2" ></i><input
+            class="w-75 mt-2 p-1" type="text" name="email" placeholder="Email" required></div>
+            <div class="mt-1"> <i class="fa-light fa-phone fas ftfa p-2" ></i><input
+            class="w-75 mt-2 p-1" type="text" name="phone" placeholder="Phone" required></div>
+            <div class="mt-1"> <i class="fa-light fa-comment fas ftfa p-2" ></i><input
+            class="w-75 mt-2 p-1" type="text" name="comments" placeholder="Comments" required></div>
+          <button type="submit"  class="me-5 mt-1 submit fw-bold" >SUBMIT</button>
         </form>
       </div>
 
